@@ -14,7 +14,8 @@ int main(int agc, char *argv[]) {
 
   }
   else {
-    printf("Im the parent of %d (pid:%d)\n", rc, (int) getpid());
+    int rc_wait = wait(NULL);
+    printf("Im the parent of %d and im waiting for it to finish %d (pid:%d)\n", rc, rc_wait, (int) getpid());
   }
   return 0;
 }
