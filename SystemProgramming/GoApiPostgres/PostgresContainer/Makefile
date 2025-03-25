@@ -21,3 +21,5 @@ run-with-persistence:
 
 check-docker-volumes:
 	docker volume ls
+connect-to-postgres-container-macos:
+	pgcli --host localhost -U super_user -d mydatabase
