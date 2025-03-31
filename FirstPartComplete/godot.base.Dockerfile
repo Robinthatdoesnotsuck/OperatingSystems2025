@@ -13,4 +13,4 @@ RUN wget https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}
 && mv /usr/local/bin/Godot_v${GODOT_VERSION}_linux.${ARCH} /usr/local/bin/godot \
 && chmod +x /usr/local/bin/godot
 
-CMD ["godot"]
+CMD ["godot", "--headless"]

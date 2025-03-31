@@ -23,8 +23,8 @@ RUN     chown ${uid}:${gid} -R /home/docker_user
 #
 USER    docker_user 
 ENV     HOME /home/docker_user
-WORKDIR ./app
+WORKDIR /app
 COPY . .
 RUN chmod +x WebSocket_Multiplayer_Demo.x86_64
 EXPOSE 8080
-#CMD ["./WebSocket_Multiplayer_Demo.x86_64"]
+CMD ["./WebSocket_Multiplayer_Demo.x86_64"]
