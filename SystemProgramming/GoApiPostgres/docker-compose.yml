@@ -1,1 +1,31 @@
 
+
+services:
+  web:
+    build: ./MultithreadingServer
+    ports:
+      - "8000:8000"
+    volumes:
+    - .:/app
+    environment:
+      DATABASE_URL: "host=postgres_database user=postgres password=postgres dbname=postgres sslmode=disable"
+    depends_on:
+      - postgres_database
+  
+  postgres_database:
+    container_name: postgres_database
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+networks:
+  timenet: null
+
+volumes:
+  pgdata: null
+  app: null
