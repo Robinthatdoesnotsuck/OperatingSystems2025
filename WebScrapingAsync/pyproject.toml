@@ -1,0 +1,17 @@
+[project]
+name = "webscrapingasync"
+version = "0.1.0"
+description = "Web scraping project to learn about asynchronous tasks"
+authors = [
+    {name = "Iram Lopez",email = "ilopez@qualtrics.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "playwright (>=1.52.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
