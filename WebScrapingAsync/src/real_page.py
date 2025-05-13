@@ -9,5 +9,6 @@ with sync_playwright() as p:
     submit_button = page.get_by_text("Sign up for GitHub")
     submit_button.first.click()
     print(page.title())
-    
+    dialog = page.get_attribute("")
     browser.close()
+    
