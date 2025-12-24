@@ -7,7 +7,7 @@
 int main (int argc, char *argv[]) {
   printf("hello world pid(%d)\n", (int)getpid());
   int rc = fork();
-  char * memory = malloc(sizeof(char ) * 80);
+  char* memory = malloc(sizeof(char ) * 80);
   free(memory);
   if (rc < 0) {
     fprintf(stderr, "fork failed \n");
