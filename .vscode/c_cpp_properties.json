@@ -7,10 +7,10 @@
       ],
       "compilerPath": "/usr/bin/gcc",
       "cStandard": "${default}",
-      "cppStandard": "${default}",
+      "cppStandard": "c++20",
       "intelliSenseMode": "linux-gcc-x64",
       "compilerArgs": [
-        ""
+        "-std=c++20"
       ]
     }
   ],
