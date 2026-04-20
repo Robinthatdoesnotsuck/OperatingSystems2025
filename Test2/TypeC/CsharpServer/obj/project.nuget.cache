@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mvDqMvQB/BE=",
+  "success": true,
+  "projectFilePath": "/home/danyarch/Projects/Classes/OperatingSystems2025/Test2/TypeC/CsharpServer/CsharpServer.csproj",
+  "expectedPackageFiles": [
+    "/home/danyarch/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.4/microsoft.aspnetcore.app.ref.10.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
